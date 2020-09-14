@@ -268,11 +268,11 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background-image: linear-gradient(to right, #A9A9F5 0%, #8181F7 100%);
 }
 
 .text-color {
-    color: #0f9d58 !important;
+    color: #8181F7 !important;
 }
 
 .white-color {
@@ -284,7 +284,7 @@ mark {
     position: fixed;
     bottom: 0;
     z-index: 300;
-    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background: linear-gradient(to right, #A9A9F5 0%, #8181F7 100%);
     opacity: 0.8;
 }
 
@@ -578,10 +578,11 @@ header .go-back i {
     height: 40vh !important;
 }
 
+/*首页蒙板渐变动画
 .bg-cover:after {
     -webkit-animation: rainbow 60s infinite;
     animation: rainbow 60s infinite;
-}
+}*/
 
 .bg-cover:before,
 .bg-cover:after {
@@ -1345,7 +1346,7 @@ thead {
 
 .chip-container .chip:hover {
     color: #fff;
-    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%) !important;
+    background: linear-gradient(to right, #A9A9F5 0%, #8181F7 100%) !important;
 }
 
 .chip .tag-length {
@@ -1421,7 +1422,7 @@ thead {
     left: 18px;
     height: 100%;
     width: 4px;
-    background: #0f9d58;
+    background: #8181F7;
 }
 
 @media only screen and (min-width: 900px) {
@@ -1657,8 +1658,8 @@ thead {
     margin: 0 0.5rem;
     padding: 0;
     color: #fff;
-    border: 1px solid #0f9d58;
-    background: radial-gradient(#4cbf30, #0f9d58);
+    border: 1px solid #8181F7;
+    background: radial-gradient(#A9A9F5, #8181F7);
     font-size: 0.9rem;
     border-radius: 50%;
     box-shadow: 0 4px 6px rgba(50, 50, 93, .21), 0 2px 3px rgba(0, 0, 0, .1);
@@ -1834,8 +1835,8 @@ thead {
 
 .other-skills .chip:hover {
     color: #fff;
-    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
-    border: 1px solid #4cbf30;
+    background: linear-gradient(to right, #A9A9F5 0%, #8181F7 100%);
+    border: 1px solid #A9A9F5;
     box-shadow: 0 5px 5px rgba(0, 0, 0, .25)
 }
 
@@ -2168,4 +2169,19 @@ footer .copy-right {
     height: 50px;
     padding: 0px;
     margin: 0px;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar-thumb {
+    background-color: #4d1ff3;
+    background-image: -webkit-linear-gradient(45deg,rgba(85, 248, 226, 0.623) 25%,transparent 25%,transparent 50%,rgba(33, 48, 252, 0.952) 50%,rgba(85, 248, 226, 0.623) 75%,transparent 75%,transparent);
+    border-radius: 3em;
+}
+::-webkit-scrollbar-track {
+    background-color: rgb(181, 203, 245);
+    border-radius: 3em;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 15px;
 }
