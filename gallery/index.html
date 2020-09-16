@@ -29,6 +29,26 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
+    <!-- <script>
+        浏览器搞笑标题
+        var OriginTitle = document.title;
+        var titleTime;
+        document.addEventListener('visibilitychange', function () {
+            if (document.hidden) {
+                $('[rel="icon"]').attr('href', "https://cdn.jsdelivr.net/gh/Yafine/cdn@2.5/source/favicon.png");
+                document.title = 'ヽ(●-`Д´-)ノ你要玩捉迷藏嘛';
+                clearTimeout(titleTime);
+            }
+            else {
+                $('[rel="icon"]').attr('href', "https://cdn.jsdelivr.net/gh/Yafine/cdn@2.5/source/favicon.png");
+                document.title = 'ヾ(Ő∀Ő3)ノ好哦！' + OriginTitle;
+                titleTime = setTimeout(function () {
+                    document.title = OriginTitle;
+                }, 2000);
+            }
+        });
+    </script> -->
+
 <meta name="generator" content="Hexo 5.1.1"></head>
 
 
@@ -636,6 +656,14 @@ $(function () {
         if (windowWidth > 768) {
             document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
         }
+        </script>
+        
+        
+        <script type="text/javascript">
+            var OriginTitile=document.title,st;
+            document.addEventListener("visibilitychange",function(){
+                document.hidden?(document.title="ヽ(●-`Д´-)ノ你要玩捉迷藏嘛",clearTimeout(st)):(document.title="(Ő∀Ő3)ノ好哦！",st=setTimeout(function(){document.title=OriginTitile},3e3))
+            })
         </script>
         
         

@@ -1861,12 +1861,12 @@ thead {
   &.first-child  /*以下部分能使图片居中显示*/
     display: block;
   &.loaded
-    position: absolute;
-    display: block;
+    position： absolute ；
+    display： block ；
   img
-    display: block;
-    max-width: 100%;
-    margin: 0 auto ;
+    display： block ；
+    max-width： 100% ；
+    margin： 0 auto ;
  
 }
 
